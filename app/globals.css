@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 91%;
+    --foreground: 150 33% 2%;
+    --card: 0 0% 95%;
+    --card-foreground: 150 33% 2%;
+    --popover: 0 0% 95%;
+    --popover-foreground: 150 33% 2%;
+    --primary: 348 47% 60%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 207 59% 75%;
+    --secondary-foreground: 150 33% 2%;
+    --muted: 0 0% 85%;
+    --muted-foreground: 150 10% 35%;
+    --accent: 207 59% 75%;
+    --accent-foreground: 150 33% 2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 80%;
+    --input: 0 0% 80%;
+    --ring: 348 47% 60%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 150 33% 2%;
+    --foreground: 0 0% 91%;
+    --card: 150 20% 8%;
+    --card-foreground: 0 0% 91%;
+    --popover: 150 20% 8%;
+    --popover-foreground: 0 0% 91%;
+    --primary: 348 47% 60%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 207 59% 75%;
+    --secondary-foreground: 150 33% 2%;
+    --muted: 150 20% 12%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 207 59% 75%;
+    --accent-foreground: 150 33% 2%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 150 20% 15%;
+    --input: 150 20% 15%;
+    --ring: 348 47% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-cream text-ink;
+  }
+}
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
