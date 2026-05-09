@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { ArrowRight, Github, Mail, ExternalLink, Award, GraduationCap, Briefcase, Wrench, MessageCircle } from "lucide-react"
+import { asset } from "@/lib/asset"
 
 import { Button } from "@/components/ui/button"
 import { ProjectCard } from "@/components/project-card"
@@ -201,14 +202,14 @@ export default function Portfolio() {
               title="《峡谷寻城记》— 沉浸式电竞文旅伴游系统"
               description="针对腾讯全球开悟大赛设计的 AI 应用，将电竞 IP、文旅探索与 AI 技术深度结合。首创「电竞 IP + AI Agent + LBS 游戏化」模式，设计 6 位英雄 AI 智能体的性格、剧情及互动逻辑。"
               tags={["AI Agent", "LBS", "多模态AI", "TTS", "MVP设计"]}
-              image="/project-canyon.png"
+              image={asset("/project-canyon.png")}
               demoUrl="/projects/canyon"
             />
             <ProjectCard
               title="大型交通枢纽通行车辆智能检测系统"
               description="从 0 到 1 打造结合 AI 视觉与高并发流处理的智能调度中枢，实现园区车辆监控、拥堵预测与安全预警。模型准确率达 90%，将核心调度人力成本大幅压缩至 1-2 人。"
               tags={["AI视觉", "高并发", "WebSocket", "全栈开发", "Go/gRPC"]}
-              image="/project-its.png"
+              image={asset("/project-its.png")}
               repoUrl="https://github.com/lshstruggle/Intelligent-Transportation-System"
             />
           </div>

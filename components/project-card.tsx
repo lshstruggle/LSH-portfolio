@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { ArrowUpRight, Github } from "lucide-react"
 import { motion } from "framer-motion"
+import { asset } from "@/lib/asset"
 
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -39,7 +40,7 @@ export function ProjectCard({ title, description, tags, image, demoUrl, repoUrl 
           <div className="relative overflow-hidden h-48">
             <div className="absolute inset-0 bg-gradient-to-b from-sky/20 to-rose/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
             <img
-              src={image || "/placeholder.svg"}
+              src={image || asset("/placeholder.svg")}
               alt={title}
               className={`w-full h-full object-cover transition-transform duration-700 ${isHovered ? "scale-110" : "scale-100"}`}
             />

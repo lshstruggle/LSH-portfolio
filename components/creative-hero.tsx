@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react"
 import { motion } from "framer-motion"
+import { asset } from "@/lib/asset"
 
 export function CreativeHero() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -178,7 +179,7 @@ export function CreativeHero() {
         transition={{ duration: 0.8, delay: 0.3 }}
       >
         <img
-          src="/avatar.png"
+          src={asset("/avatar.png")}
           alt="刘松昊"
           className="w-full h-full object-cover"
         />

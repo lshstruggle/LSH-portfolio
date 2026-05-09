@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { ArrowLeft, MapPin, Calendar, Layers, Target, Users, Sparkles, MessageSquare, Lightbulb } from "lucide-react"
 import { motion } from "framer-motion"
+import { asset } from "@/lib/asset"
 
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -80,7 +81,7 @@ export default function CanyonProjectPage() {
                 {/* 屏幕 */}
                 <div className="relative rounded-[1.5rem] overflow-hidden bg-ink aspect-[9/19.5]">
                   <img
-                    src="/canyon-1.png"
+                    src={asset("/canyon-1.png")}
                     alt="峡谷寻城记截图 1"
                     className="w-full h-full object-cover"
                   />
@@ -99,7 +100,7 @@ export default function CanyonProjectPage() {
                 {/* 屏幕 */}
                 <div className="relative rounded-[1.5rem] overflow-hidden bg-ink aspect-[9/19.5]">
                   <img
-                    src="/canyon-2.png"
+                    src={asset("/canyon-2.png")}
                     alt="峡谷寻城记截图 2"
                     className="w-full h-full object-cover"
                   />
