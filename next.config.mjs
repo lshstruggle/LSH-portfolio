@@ -2,6 +2,8 @@
 const nextConfig = {
   output: 'export',
   distDir: 'dist',
+  basePath: '/LSH-portfolio',
+  assetPrefix: '/LSH-portfolio/',
   trailingSlash: true,
   eslint: {
     ignoreDuringBuilds: true,
