@@ -197,7 +197,7 @@ export default function Portfolio() {
         <div className="container relative z-10">
           <SectionHeading title="项目经历" subtitle="我的代表性作品" />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
             <ProjectCard
               title="《峡谷寻城记》— 沉浸式电竞文旅伴游系统"
               description="针对腾讯全球开悟大赛设计的 AI 应用，将电竞 IP、文旅探索与 AI 技术深度结合。首创「电竞 IP + AI Agent + LBS 游戏化」模式，设计 6 位英雄 AI 智能体的性格、剧情及互动逻辑。"
@@ -211,6 +211,13 @@ export default function Portfolio() {
               tags={["AI视觉", "高并发", "WebSocket", "全栈开发", "Go/gRPC"]}
               image={asset("/project-its.png")}
               repoUrl="https://github.com/lshstruggle/Intelligent-Transportation-System"
+            />
+            <ProjectCard
+              title="《金铲铲之战》系统拆解与竞品分析报告"
+              description="对英雄联盟IP下自走棋品类进行深度系统拆解，从经济系统、概率系统、战斗逻辑到变量机制逐层剖析，并与《王者万象棋》《炉石传说：酒馆战棋》进行多维度竞品对比。"
+              tags={["产品拆解", "竞品分析", "游戏策划", "系统分析"]}
+              image={asset("/project-tft.jpg")}
+              demoUrl="/projects/tft-analysis"
             />
           </div>
         </div>
