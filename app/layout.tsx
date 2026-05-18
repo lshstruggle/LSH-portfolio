@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { Toaster } from '@/components/ui/toaster'
+import WebPet from '@/components/web-pet'
 
 export const metadata: Metadata = {
   title: '刘松昊 - AI产品经理',
@@ -14,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN">
-      <body>{children}<Toaster /></body>
+      <body>{children}<Toaster /><WebPet /></body>
     </html>
   )
 }

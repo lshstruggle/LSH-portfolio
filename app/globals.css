@@ -67,6 +67,15 @@
   }
 }
 
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+.animate-wiggle {
+  animation: wiggle 0.2s ease-in-out infinite;
+}
+
 @keyframes blob {
   0% {
     transform: translate(0px, 0px) scale(1);

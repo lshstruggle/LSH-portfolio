@@ -190,7 +190,7 @@
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("cb127b050c7530b6")
+/******/ 		__webpack_require__.h = () => ("8f61017a6998bc86")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -697,7 +697,7 @@
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/LSH-portfolio/_next/";
+/******/ 		__webpack_require__.p = "/_next/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/react refresh */
